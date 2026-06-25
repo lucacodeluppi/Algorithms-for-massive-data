@@ -1,0 +1,60 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.python-version
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# --- Spark ---
+spark-warehouse/
+metastore_db/
+derby.log
+*.crc
+.spark_history/
+
+# --- Data ---
+# Never commit the raw arXiv dump (~4 GB) or any other Kaggle download.
+arxiv_data/
+data/
+*.json
+*.jsonl
+*.csv
+*.tsv
+*.parquet
+*.zip
+*.tar.gz
+*.gz
+
+# --- Secrets ---
+# Just in case: never commit Kaggle credentials.
+kaggle.json
+.kaggle/
+.env
+*.key
+
+# --- LaTeX build artefacts (keep the .tex and the final .pdf, drop the rest) ---
+report/*.aux
+report/*.log
+report/*.out
+report/*.toc
+report/*.bbl
+report/*.blg
+report/*.fdb_latexmk
+report/*.fls
+report/*.synctex.gz
+report/_minted-*/
+report/auto/
+
+# --- OS / IDE ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+.Rhistory
